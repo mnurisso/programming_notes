@@ -293,3 +293,11 @@ or to update at the same time every tags:
 git push origin --tags
 ```
 
+## Compare different versions
+
+If you want to compare the same file for different commitments you can use the `git diff` command
+```bash
+git diff <id1> <id2> filename
+```
+
+where the `<id>` refers to the version identifiers that can be found through the `git log` command.
