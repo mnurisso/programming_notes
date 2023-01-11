@@ -144,6 +144,12 @@ Automatically add the change to the **staging** area.
 
 You can connect your repository trough **ssh** or **https**. With the first one you don't need to put username and password every time, it uses the public key to generate and encripted message that can be decripted only with your private key.
 
+In order to check if you correctly can connect to the right user you can use the command:
+
+```bash
+ssh -vT git@github.com
+```
+
 ## Clone
 
 ```bash
