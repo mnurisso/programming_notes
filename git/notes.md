@@ -32,7 +32,7 @@ to add a file into the **staging area**. The status of the file pass from **untr
 
 ```bash
 git config --global user.name "Matteo Nurisso"
-git config --global user.mail "mnurisso@sissa.it"
+git config --global user.email "mnurisso@sissa.it"
 ```
 
 ```bash
@@ -82,6 +82,14 @@ git checkout -- filename
 ```
 
 To dismiss modification that you don't want to add and commit.
+
+### Change commit author
+
+To change the author info of the last commit.
+
+```bash
+git commit --amend --reset-author
+```
 
 ### Commit log list
 
