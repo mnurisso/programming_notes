@@ -1,3 +1,22 @@
+- [Git](#git)
+  * [Initialize Git repository](#initialize-git-repository)
+  * [Config Git](#config-git)
+  * [Commit](#commit)
+    + [Dismiss modification](#dismiss-modification)
+    + [Change commit author](#change-commit-author)
+    + [Commit log list](#commit-log-list)
+  * [Recover file](#recover-file)
+  * [Change filename](#change-filename)
+- [Github](#github)
+  * [Clone](#clone)
+  * [Pull](#pull)
+  * [Fork](#fork)
+  * [Push](#push)
+  * [Branch](#branch)
+  * [Merge](#merge)
+  * [Tag](#tag)
+  * [Compare different versions](#compare-different-versions)
+
 # Git
 
 Git is a Version control system.
