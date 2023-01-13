@@ -14,6 +14,7 @@
   * [Push](#push)
   * [Branch](#branch)
   * [Merge](#merge)
+  * [Fetch](#fetch)
   * [Tag](#tag)
   * [Compare different versions](#compare-different-versions)
 
@@ -285,6 +286,23 @@ git branch -d branch_name
 ```
 
 Delete a branch, but it's only a pointer so it's not deleting the commitments.
+
+## Fetch
+
+The `git fetch` command downloads objects to the local machine without overwriting existing local code in the current branch. 
+
+The git fetch command retrieves commits, files, branches, and tags from a remote repository. The general syntax for command is:
+
+```bash
+git fetch <options> <remote name> <branch name>
+```
+
+With a `git fetch` the working directory is unaffected. 
+The content can be accessed with `git checkout` on the fetched branch or can be merged by going in the final branch in which the merge should happen and with the command:
+
+```bash
+git merge <remote name> <branch name>
+```
 
 ## Tag
 
