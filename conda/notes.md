@@ -61,6 +61,8 @@ You can create environments with different versions of python:
 conda create --name env_name python=2.7
 ```
 
+A specific version of python can also be specified in a second moment, all the installed packages will be adapted to the required version of python (if available).
+
 #### Managing packages
 
 To look if a package is installed:
