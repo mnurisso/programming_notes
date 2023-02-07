@@ -2,6 +2,9 @@
 
 # Anaconda
 
+A faster version of conda, working with identical commands as described below, is mamba. 
+We suggest to try this option.
+
 To access a graphical interface to manage environment and launch utilities like **jupyter**:
 
 ```bash
