@@ -96,10 +96,33 @@ pip install .
 
 If some local package is modified you will simply need to reinstall the same package to override the previous one.
 
-### Delete an environment
+#### Delete an environment
 
 ```bash
 conda env remove -n ENV_NAME
 conda env remove --name ENV_NAME
 ```
 
+#### Create an environment with a .yml file
+
+The `environment.yml` file has to specify details of the packages, the environment name and the python version required.
+
+```
+name: envname
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9,<3.11
+  - pyYAML
+  - xarray
+  - pip
+  - pip:
+    - sparse
+    - git+https://github.com/jhardenberg/smmregrid.git
+```
+
+In this example a range of python versions is specified and some custom package that requires a download from a git repository has been added.
+
+```bash
+conda env create -f environment.yml
+```
