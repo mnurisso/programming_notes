@@ -285,6 +285,13 @@ git branch --merged main | grep -v "^\* main" | xargs -n 1 -r git branch -d
 git branch # to see what remains
 ```
 
+If you want instead to delete branches that are not in the github anymore run:
+
+```bash
+git fetch
+git branch -vv | grep ': gone]' | grep -v '\*' | awk '{ print $1; }' | xargs -r git branch -d
+```
+
 ## Merge
 
 ```bash
