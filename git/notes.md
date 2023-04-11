@@ -272,6 +272,19 @@ The branch is created from the actual position or adding another branchname to t
 
 A general rule for branches is: new feature = new branch.
 
+### Delete merged branches
+
+It can be useful to delete old branches that are now merged into the master/main branch.
+
+To automatically delete these branches run the following commands:
+
+```bash
+git fetch
+git branch # to see the initial list
+git branch --merged main | grep -v "^\* main" | xargs -n 1 -r git branch -d
+git branch # to see what remains
+```
+
 ## Merge
 
 ```bash
