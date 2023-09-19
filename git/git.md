@@ -11,6 +11,7 @@
   - [Branch](#branch)
     - [Switch branch](#switch-branch)
   - [Merge](#merge)
+    - [Merge conflicts](#merge-conflicts)
     - [Delete merged branches](#delete-merged-branches)
   - [Fetch](#fetch)
   - [Tag](#tag)
@@ -233,13 +234,30 @@ git checkout master #final branch
 git merge branch_name
 ```
 
-Fast-forward if there is nothing else apart from pushing forward the master branch. If it's not fast-forward a commit message is necessary to explain why the merge is necessary.
+Fast-forward if there is nothing else apart from pushing forward the master branch.
+If it's not fast-forward a commit message is necessary to explain why the merge is necessary.
 
 ```bash
 git branch -d branch_name
 ```
 
 Delete a branch, but it's only a pointer so it's not deleting the commitments.
+It is useful to delete branches that are not used anymore to avoid confusion.
+
+### Merge conflicts
+
+If the same file is modified in two different branches, git is not able to understand which is the correct version.
+In this case it's necessary to manually modify the file and then add and commit the changes.
+A file with merge conflicts has the following structure:
+
+```bash
+<<<<<<< HEAD
+master version
+=======
+branch version
+>>>>>>> branch_name
+```
+
 
 ### Delete merged branches
 
