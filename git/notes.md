@@ -1,22 +1,24 @@
 - [Git](#git)
-  * [Initialize Git repository](#initialize-git-repository)
-  * [Config Git](#config-git)
-  * [Commit](#commit)
-    + [Dismiss modification](#dismiss-modification)
-    + [Change commit author](#change-commit-author)
-    + [Commit log list](#commit-log-list)
-  * [Recover file](#recover-file)
-  * [Change filename](#change-filename)
+  - [Initialize Git repository](#initialize-git-repository)
+  - [Config Git](#config-git)
+  - [Commit](#commit)
+    - [Dismiss modification](#dismiss-modification)
+    - [Change commit author](#change-commit-author)
+    - [Commit log list](#commit-log-list)
+  - [Recover file](#recover-file)
+  - [Change filename](#change-filename)
+  - [Custom aliases](#custom-aliases)
 - [Github](#github)
-  * [Clone](#clone)
-  * [Pull](#pull)
-  * [Fork](#fork)
-  * [Push](#push)
-  * [Branch](#branch)
-  * [Merge](#merge)
-  * [Fetch](#fetch)
-  * [Tag](#tag)
-  * [Compare different versions](#compare-different-versions)
+  - [Clone](#clone)
+  - [Pull](#pull)
+  - [Fork](#fork)
+  - [Push](#push)
+  - [Branch](#branch)
+    - [Delete merged branches](#delete-merged-branches)
+  - [Merge](#merge)
+  - [Fetch](#fetch)
+  - [Tag](#tag)
+  - [Compare different versions](#compare-different-versions)
 
 # Git
 
@@ -167,6 +169,16 @@ git mv oldname.txt newname.txt
 ```
 
 Automatically add the change to the **staging** area.
+
+## Custom aliases
+
+To define a new alias available for every git repository:
+
+```bash
+git config --global alias.graph "log --all --graph --decorate --oneline"
+```
+
+this will create a new command `git graph` that will show the commit log in a nice way.
 
 # Github
 
