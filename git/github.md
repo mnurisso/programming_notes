@@ -1,3 +1,15 @@
+- [Github]#github
+  - [Clone]#clone
+  - [Pull]#pull
+  - [Fork]#fork
+  - [Push]#push
+  - [Branch]#branch
+    - [Delete merged branches]#delete-merged-branches
+    - [Merge]#merge
+    - [Fetch]#fetch
+    - [Tag]#tag
+    - [Compare different versions]#compare-different-versions
+
 # Github
 
 You can connect your repository trough **ssh** or **https**. With the first one you don't need to put username and password every time, it uses the public key to generate and encripted message that can be decripted only with your private key.
