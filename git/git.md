@@ -258,6 +258,27 @@ branch version
 >>>>>>> branch_name
 ```
 
+To solve the conflict it's necessary to manually modify the file and then add and commit the changes.
+
+If you know that you want to sistematically use the version of a specific branch you can use the command:
+
+```bash
+git merge -s recursive -Xours branch_name
+```
+
+to automatically solve the conflicts using the version of the current branch
+
+```bash
+git merge -s recursive -Xtheirs branch_name
+```
+
+to automatically solve the conflicts using the version of the `branch_name` branch.
+
+If while solving the conflicts you realize that you want to abort the merge you can use the command:
+
+```bash
+git merge --abort
+```
 
 ### Delete merged branches
 
