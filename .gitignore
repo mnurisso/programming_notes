@@ -1,3 +1,4 @@
 /climate/xarray/02_season_mean.ipynb
 /climate/xarray/02_time_series.ipynb
 *.nc
+*.DS_Store # to ignore Mac OS X hidden files
