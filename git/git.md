@@ -4,6 +4,7 @@
   - [Commit](#commit)
     - [Dismiss modification](#dismiss-modification)
     - [Change commit author](#change-commit-author)
+    - [Add to the last commit](#add-to-the-last-commit)
     - [Commit log list](#commit-log-list)
   - [Recover file](#recover-file)
   - [Change filename](#change-filename)
@@ -16,6 +17,7 @@
   - [Fetch](#fetch)
   - [Tag](#tag)
   - [Compare different versions](#compare-different-versions)
+  - [Inspect repository](#inspect-repository)
 
 # Git
 
@@ -109,6 +111,16 @@ To change the author info of the last commit.
 ```bash
 git commit --amend --reset-author
 ```
+
+### Add to the last commit
+
+```bash
+git add forgotten_file.txt
+git commit --amend
+```
+
+To add a forgotten file to the last commit.
+The commit message will be the same as the previous one.
 
 ### Commit log list
 
@@ -353,3 +365,14 @@ git diff <id1> <id2> filename
 ```
 
 where the `<id>` refers to the version identifiers that can be found through the `git log` command.
+
+## Inspect repository
+
+Grep-like command to search for a string in the repository:
+
+```bash
+git grep "string" #search for a string in the repository
+git grep -n "string" #search for a string in the repository and show the line number
+git grep -c "string" #search for a string in the repository and show the number of occurrences
+git grep -c -n "string" #search for a string in the repository and show the number of occurrences and the line number
+```
