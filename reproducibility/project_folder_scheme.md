@@ -19,3 +19,9 @@ project_name/
     ├── index.rst
     └── ...
 ```
+
+- `src` should go under version control.
+- A License file can be included in the `src` folder.
+- The `requirements.txt` file or a `piproject.toml` should contain all the software dependencies needed to run the code in the project if the code it's written in python.
+- The `doc` folder should contain a `index.rst` file that describes the project and how to run the code.
+- The `README.md` file in the root folder should contain a short description of the project and how to install and run the code.
