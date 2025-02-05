@@ -16,14 +16,21 @@ Contains notes on basic bash commands and shell scripting.
 
 Contains a set of 10 lessons that cover the basics of C++.
 
+- [Lesson 1: Introduction to C++](c++/01_intro.md)
+
 ### Climate
 
 A miscellaneous collection of notes on climate science and related tools.
 This is highly incomplete.
 
+- [Introduction to xarray](climate/xarray/01_quick_introduction.ipynb)
+
 ### Conda
 
 Notes on managing Python environments with Conda.
+
+- [Conda Cheatsheet](conda/conda-cheatsheet.pdf)
+- [Introduction to conda](conda/notes.md)
 
 ### Documentation
 
@@ -33,6 +40,9 @@ Few notes on writing good documentation.
 
 Notes on using Git for version control.
 A section on GitHub is also included.
+
+- [Git](git/git.md)
+- [GitHub](git/github.md)
 
 ### HPC
 
@@ -51,6 +61,12 @@ Highly incomplete notes on Jupyter notebooks.
 
 A collection of notes on Python programming. This suppose that you have already a basic knowledge of coding.
 Notes on pytest are included in a subfolder.
+
+- [Introduction to Python](python/01_intro.md)
+- [Variables and functions](python/02_variables_and_functions.md)
+- [Advanced Topics](python/03_advanced_topics.md)
+- [Jupyter Notebook](python/04_Jupyter_cluster.ipynb)
+- [Pytest](python/pytest/notes.md)
 
 ### Reproducibility
 
