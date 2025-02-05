@@ -48,6 +48,9 @@ A section on GitHub is also included.
 
 Another highly incomplete section on High Performance Computing.
 Few notes about specific HPC systems are included.
+A section on SLURM is also included.
+
+- [SLURM](HPC/slurm/notes.md)
 
 ### IDL
 
