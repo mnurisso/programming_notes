@@ -63,8 +63,8 @@ while true; do
     wait $TEE_PID 2>/dev/null
     rm -f "$PIPE"
 
-    if [ $RSYNC_EXIT -eq 0 ]; then
-        echo "rsync completed successfully."
+    if [ $RSYNC_EXIT -eq 0 ] || [ $RSYNC_EXIT -eq 1 ]; then
+        echo "rsync completed (exit code $RSYNC_EXIT). No retry needed."
         break
     else
         echo "rsync exited with code $RSYNC_EXIT. Restarting..."
